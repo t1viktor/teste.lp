@@ -1,0 +1,128 @@
+
+:root{
+
+    --laranja:rgb(216, 152, 79);
+    --transpatente:rgba(55, 17, 143, 0.377);
+    --branco: rgb(209, 188, 243) ;
+    --amarelo: rgb(201, 193, 78) ;
+    --vinho:rgb(117, 13, 13);
+    --preto:rgb(0, 0, 0);
+
+
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(26, 1, 65, 0.267);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem;
+    border-bottom: 2px solid rgba(2, 32, 2, 0.582);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.589);
+}
+
+header a{
+
+    color: var(--laranja);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.9rem;
+
+   
+}
+
+.list{
+
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 4rem;
+
+
+}
+
+@keyframes logo{
+
+    0%{text-shadow: 0 0 15px rgb(238, 255, 0); color: rgb(187, 79, 8); scale: 1; }
+    40%{text-shadow: 0 0 15px rgb(187, 79, 8); color: rgb(238, 255, 0); scale: 1.06;}
+    70%{text-shadow: 0 0 15px rgb(187, 79, 8); color: rgb(238, 255, 0); scale: 1.06;}
+    100%{text-shadow: 0 0 15px rgb(238, 255, 0); color: rgb(187, 79, 8); scale: 1; }
+    
+    
+
+}
+
+
+
+header div{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 3.5rem;
+    animation-name: logo;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transition: all 5s ease;
+    cursor: pointer;
+   
+   
+}
+
+
+h1{
+    
+   font-size: 4rem;
+   font-family: "Brygada 1918", serif;
+
+}
+
+header span{
+
+    font-size: 5rem;
+    font-family: "Brygada 1918", serif;
+    
+   
+}
+
+main, footer  {
+    padding: 4rem;
+    font-size: 4rem;
+   
+}
+
+footer {
+   
+    box-shadow: 0 -5px 10px rgb(0, 0, 0);
+
+}
+
+nav{
+    position: relative;
+}
+
+header nav li{
+
+   
+   transition: all 0.3s ease-in-out;
+
+
+}
+
+header nav li:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+main{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--amarelo);
+}
+
+.sec1 {
+
+    margin-top: 18rem;
+     
+}
